@@ -1,0 +1,87 @@
+.. integrate documentation master file, created by
+   sphinx-quickstart on Mon Jan 21 20:21:55 2019.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+.. figure:: img/banner001.jpg   
+
+Course Website
+==============
+
+
+For Students - Getting Started!
+-------------------------------
+This website is supplementory material for the course "EARTH5019: Theoretical and Applied Climatology" listed on the University of Glasgow Moodle site. Students can get an overview of the course in the :doc:`general information section<general/info>` and a more detailed overview of the course contents in the :doc:`course specifics section<general/syllabus>`. A detailed timetable and assessment deadlines can be found in the :doc:`when and where section<general/timetable>`.
+
+.. note:: Assessment criteria and other important information are copied here for your convenience, so you have all course content and information in the same place! I will do my best to keep everything up-to-date here. However, if any information deviates from that given on **Moodle** or the official **Course Handbook** (uploaded on Moodle), the information from the latter sources are to be regarded as correct.
+
+
+Table of Contents
+-----------------    
+    
+.. toctree::
+   :maxdepth: 1
+   :caption: Course Information:
+   
+   general/info
+   general/syllabus
+   general/timetable
+
+.. .. toctree::
+..    :maxdepth: 1
+..    :caption: Lectures:
+..
+..    lectures/info
+..    lectures/A001/A001
+..    lectures/A002/A002
+..    lectures/A003/A003
+..    lectures/A004/A004
+..    lectures/A005/A005
+..    lectures/A006/A006
+..    lectures/A007/A007
+..    lectures/A008/A008
+..
+.. .. toctree::
+..    :maxdepth: 1
+..    :caption: Exercises:
+..
+..    exercises/info
+..    exercises/E001/E001
+..    exercises/E002/E002
+..    exercises/E003/E003
+..    exercises/E004/E004
+..    exercises/E005/E005
+..    exercises/E101/E101
+..    exercises/E102/E102
+..    exercises/E103/E103
+..    exercises/E104/E104
+..    exercises/E105/E105
+..    exercises/E201/E201
+..
+.. .. toctree::
+..    :maxdepth: 1
+..    :caption: Projects:
+..
+..    projects/P001/P001_info
+..    projects/P002/P002_info
+..    projects/P003/P003_info
+..    projects/P004/P004_info
+..    projects/P005/P005_info
+..    projects/P006/P006_info
+..    projects/P007/P007_info
+..    projects/P008/P008_info
+..    projects/P009/P009_info
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Additional Resources:
+   
+   resources/dictionary
+   resources/reading
+   resources/credits
+   
+.. .. toctree::
+..    :maxdepth: 2
+..    :caption: Teacher Guide:
+..
+..    guide/guide
