@@ -9,9 +9,9 @@ Course Website
 ==============
 
 
-For Students - Getting Started!
--------------------------------
-This website is supplementory material for the course "EARTH5019: Theoretical and Applied Climatology" listed on the University of Glasgow Moodle site. Students can get an overview of the course in the :doc:`general information section<general/info>` and a more detailed overview of the course contents in the :doc:`course specifics section<general/syllabus>`. A detailed timetable and assessment deadlines can be found in the :doc:`when and where section<general/timetable>`.
+Getting Started!
+----------------
+This website is supplementary material for the course "EARTH5019: Theoretical and Applied Climatology" listed on the University of Glasgow Moodle site. Students can get an overview of the course in the :doc:`general information section<general/info>` and a more detailed overview of the course contents in the :doc:`course specifics section<general/syllabus>`. A detailed timetable and assessment deadlines can be found in the :doc:`when and where section<general/timetable>`.
 
 .. note:: Assessment criteria and other important information are copied here for your convenience, so you have all course content and information in the same place! I will do my best to keep everything up-to-date here. However, if any information deviates from that given on **Moodle** or the official **Course Handbook** (uploaded on Moodle), the information from the latter sources are to be regarded as correct.
 
