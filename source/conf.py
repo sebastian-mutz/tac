@@ -84,3 +84,4 @@ napoleon_use_param = False
 extensions = [
     "sphinxcontrib.jquery",
 ]
+
