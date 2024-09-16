@@ -42,7 +42,7 @@ Lecture Timetable and Topics
 | 15.10.2024       |            | * Advanced statistical methods and machine learning                           |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Tuesday,         | S.G. Mutz  | * Statistics and machine learning in climate science                          |
-| 22.10.2024       |            | * Statistics and machine learning in climate science                          |
+| 22.10.2024       |            |                                                                               |
 +------------------+------------+-------------------------------------------------------------------------------+
 
 Lab Timetable and Topics
