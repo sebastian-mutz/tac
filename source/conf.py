@@ -30,7 +30,7 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 # General information about the project.
-project = 'Theoretical and Applied Climatology'
+project = 'EARTH5019: Theoretical and Applied Climatology (UofG)'
 year = '2024'
 author = 'Sebastian G. Mutz'
 copyright = '{0}, {1}'.format(year, author)

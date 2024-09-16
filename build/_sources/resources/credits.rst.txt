@@ -1,4 +1,4 @@
-Credits and License
+License and Credits
 ===================
 
 We believe in freedom, open-source and removing barriers in learning and teaching and release all materials on this website under very permissive licenses. We encourage the use of all materials by students, teachers and everyone else, but ask that the materials are credited in accordance with their respective licenses.
