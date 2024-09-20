@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. figure:: img/banner001.jpg   
+.. figure:: img/tacBanner001_ccby_SebastianMutz.jpg
 
 Course Website
 ==============

@@ -49,7 +49,7 @@ templates_path = ['.']
 
 # -- Options for HTML output ----------------------------------------------
 
-html_logo = "img/integrateLogo_256_256.png"
+html_logo = "img/integrateLogo256x256_ccby_SebastianMutz.png"
 #html_favicon = "img/climStatBannerSmall001"
 
 html_theme = 'sphinx_rtd_theme'

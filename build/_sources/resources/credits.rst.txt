@@ -18,7 +18,7 @@ Licenses
 
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a>
 
-**The source code** for the package this course is forked from in provided as a `repository on GitHub <https://github.com/sebastian-mutz/integrate>`_. It allows easy editing and compilation the entire html site using Python and sphinx. The source code is made available under the `MIT licence <https://opensource.org/licenses/MIT>`_. (Please consult the repository LICENSE file).
+**The source code** for the package is provided as a `repository on GitHub <https://github.com/sebastian-mutz/tac>`_. It allows easy editing and compilation the entire html site using Python and sphinx. The source code is made available under the `MIT licence <https://opensource.org/licenses/MIT>`_. (Please consult the repository LICENSE file).
 
 .. figure:: mit_license.png
 

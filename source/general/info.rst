@@ -12,7 +12,7 @@ The course provides an introduction to fundamental aspects of theoretical and ap
 Course Convenor
 ---------------
 
-.. figure:: mutz001.jpg
+.. figure:: mutz001_ccbynd_SebastianMutz.jpg
 
 **Convenor:** Sebastian G. Mutz | Dr. rer. nat. habil.
 **Contact:** sebastian.mutz@glasgow.ac.uk

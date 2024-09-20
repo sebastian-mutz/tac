@@ -1,7 +1,7 @@
 Course Specifics
 ================
 
-.. figure:: banner004.jpg
+.. figure:: tacTiles_ccby_SebastianMutz.jpg
 
 Course Aims
 -----------
