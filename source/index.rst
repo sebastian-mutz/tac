@@ -27,27 +27,13 @@ Table of Contents
    general/syllabus
    general/timetable
 
-.. .. toctree::
-..    :maxdepth: 1
-..    :caption: Lectures:
-..
-..    lectures/info
-..    lectures/A001/A001
-..    lectures/A002/A002
-..    lectures/A003/A003
-..    lectures/A004/A004
-..    lectures/A005/A005
-..    lectures/A006/A006
-..    lectures/A007/A007
-..    lectures/A008/A008
-..
-.. .. toctree::
-..    :maxdepth: 1
-..    :caption: Exercises:
-..
-..    exercises/info
-..    exercises/E001/E001
-..    exercises/E002/E002
+.. toctree::
+   :maxdepth: 1
+   :caption: Exercises:
+
+   exercises/info
+   exercises/E001/py/E001
+   exercises/E002/py/E002
 ..    exercises/E003/E003
 ..    exercises/E004/E004
 ..    exercises/E005/E005
@@ -79,9 +65,3 @@ Table of Contents
    resources/dictionary
    resources/reading
    resources/credits
-   
-.. .. toctree::
-..    :maxdepth: 2
-..    :caption: Teacher Guide:
-..
-..    guide/guide

@@ -17,7 +17,8 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinx.ext.mathjax',
-    'sphinx.ext.githubpages'
+    'sphinx.ext.githubpages',
+    "sphinxcontrib.jquery"
 ]
 
 if os.getenv('SPELLCHECK'):
@@ -43,7 +44,7 @@ release = '1.1-2024.0'
 # The name of the Pygments (syntax highlighting) style to use.
 #pygments_style = 'sphinx'
 #pygments_style = 'friendly'
-pygments_style = 'trac'
+pygments_style = 'material'
 
 templates_path = ['.']
 
@@ -79,9 +80,4 @@ html_short_title = '%s-%s' % (project, version)
 napoleon_use_ivar = True
 napoleon_use_rtype = False
 napoleon_use_param = False
-
-# extensions
-extensions = [
-    "sphinxcontrib.jquery",
-]
 
