@@ -30,18 +30,18 @@ Lecture Timetable and Topics
 | Date (weeks 1-5) | Instructor | Topics                                                                        |
 +==================+============+===============================================================================+
 | Tuesday,         | S.G. Mutz  | * Primary controls on the climate system                                      |
-| 24.09.2024       |            | * Fundamental concepts in statistics and probability theory                   |
+| 24.09.2024       |            | * Introduction to probability                                                 |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Tuesday,         | S.G. Mutz  | * Primary controls on the climate system                                      |
-| 01.10.2024       |            | * Fundamental concepts in statistics and probability theory                   |
+| 01.10.2024       |            | * Fundamentals in applied statistics                                          |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Tuesday,         | S.G. Mutz  | * Atmospheric movement                                                        |
-| 08.10.2024       |            | * Practical concepts and methods in statistics                                |
+| 08.10.2024       |            | * Fundamentals in applied statistics                                          |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Tuesday,         | S.G. Mutz  | * Atmospheric movement and water                                              |
-| 15.10.2024       |            | * Advanced statistical methods and machine learning                           |
+| 15.10.2024       |            | * Statistical methods and modelling                                           |
 +------------------+------------+-------------------------------------------------------------------------------+
-| Tuesday,         | S.G. Mutz  | * Statistics and machine learning in climate science                          |
+| Tuesday,         | S.G. Mutz  | * Statistical methods and modelling (in climate science)                      |
 | 22.10.2024       |            |                                                                               |
 +------------------+------------+-------------------------------------------------------------------------------+
 
@@ -54,7 +54,7 @@ Lab Timetable and Topics
 | Wednesday,       | S.G. Mutz  | * Coding crash course                                                         |
 | 06.11.2024       |            |                                                                               |
 +------------------+------------+-------------------------------------------------------------------------------+
-| Wednesday,       | S.G. Mutz  | * Coding crash course (continued)                                             |
+| Wednesday,       | S.G. Mutz  | * Coding crash course                                                         |
 | 13.11.2024       |            | * Working on climate problems                                                 |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Wednesday,       | S.G. Mutz  | * Working on climate problems                                                 |
