@@ -52,7 +52,7 @@ Lab Timetable and Topics
 | Date (weeks 6-10)| Instructor | Topics                                                                        |
 +==================+============+===============================================================================+
 | Wednesday,       | S.G. Mutz  | * Coding crash course                                                         |
-| 06.11.2024       |            | * Coding crash course                                                         |
+| 06.11.2024       |            |                                                                               |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Wednesday,       | S.G. Mutz  | * Coding crash course (continued)                                             |
 | 13.11.2024       |            | * Working on climate problems                                                 |
@@ -64,7 +64,7 @@ Lab Timetable and Topics
 | 27.11.2024       |            | * Group projects                                                              |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Wednesday,       | S.G. Mutz  | * Group project discussion                                                    |
-| 04.12.2024       |            | * Group project discussion                                                    |
+| 04.12.2024       |            |                                                                               |
 +------------------+------------+-------------------------------------------------------------------------------+
 
 Presentations
