@@ -34,7 +34,7 @@ Table of Contents
    exercises/info
    exercises/E001/py/E001
    exercises/E002/py/E002
-..    exercises/E003/E003
+   exercises/E003/py/E003
 ..    exercises/E004/E004
 ..    exercises/E005/E005
 ..    exercises/E101/E101
