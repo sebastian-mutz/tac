@@ -35,8 +35,8 @@ Table of Contents
    exercises/E001/py/E001
    exercises/E002/py/E002
    exercises/E003/py/E003
-..    exercises/E004/E004
-..    exercises/E005/E005
+   exercises/E004/py/E004
+   exercises/E005/py/E005
 ..    exercises/E101/E101
 ..    exercises/E102/E102
 ..    exercises/E103/E103
