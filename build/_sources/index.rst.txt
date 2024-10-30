@@ -29,7 +29,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Exercises:
+   :caption: Exercises (Coding):
 
    exercises/info
    exercises/E001/py/E001
@@ -37,12 +37,16 @@ Table of Contents
    exercises/E003/py/E003
    exercises/E004/py/E004
    exercises/E005/py/E005
-..    exercises/E101/E101
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Exercises (Climate):
+
+   exercises/E101/E101
 ..    exercises/E102/E102
 ..    exercises/E103/E103
 ..    exercises/E104/E104
 ..    exercises/E105/E105
-..    exercises/E201/E201
 ..
 .. .. toctree::
 ..    :maxdepth: 1
