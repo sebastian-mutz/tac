@@ -32,7 +32,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 # General information about the project.
 project = 'EARTH5019: Theoretical and Applied Climatology (UofG)'
-year = '2024'
+year = '2025'
 author = 'Sebastian G. Mutz'
 copyright = '{0}, {1}'.format(year, author)
 

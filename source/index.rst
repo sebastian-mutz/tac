@@ -66,6 +66,7 @@ Table of Contents
    :maxdepth: 1
    :caption: Additional Resources:
    
+   resources/data
    resources/dictionary
    resources/reading
    resources/credits
