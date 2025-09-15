@@ -55,7 +55,7 @@ Lab Timetable and Topics
 | 05.11.2025       |            | * Climate exercises (theoretical)                                             |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Wednesday,       | S.G. Mutz  | * Atmospheric dynamics III and water                                          |
-| 12.11.2025       |            | * Working on climate problems                                                 |
+| 12.11.2025       |            | * Climate exercises (theoretical)                                             |
 +------------------+------------+-------------------------------------------------------------------------------+
 | Wednesday,       | S.G. Mutz  | * Advanced statistical methods and machine learning in climate science I      |
 | 19.11.2025       |            | * Group projects                                                              |

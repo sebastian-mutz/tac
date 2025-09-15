@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E102 - Hypothesis Testing &mdash; EARTH5019: Theoretical and Applied Climatology (UofG) 1.1-2025.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d623d863" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=67cdc1c8" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=55ea33ec"></script>
+        <script src="../../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EARTH5019: Theoretical and Applied Climatology (UofG)
+              <img src="../../_static/integrateLogo256x256_ccby_SebastianMutz.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2025
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Course Information:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/syllabus.html">Course Specifics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/timetable.html">When and Where</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercises (Coding):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../info.html">Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../E001/py/E001.html">E001 - Getting Started</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/dictionary.html">Programming Dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/reading.html">Reading Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/credits.html">License and Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EARTH5019: Theoretical and Applied Climatology (UofG)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">E102 - Hypothesis Testing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/exercises/E102/E102.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="e102-hypothesis-testing">
+<h1>E102 - Hypothesis Testing<a class="headerlink" href="#e102-hypothesis-testing" title="Link to this heading">¶</a></h1>
+<p>You are encouraged to re-familiarise yourself with a few topics at the start of the exercise. These are all topics we previously covered in lectures. The exercise itself is designed to give you some practice in working with these concepts to give you a more intuitive grasp of them.</p>
+<section id="recall-from-lectures">
+<h2>Recall from Lectures<a class="headerlink" href="#recall-from-lectures" title="Link to this heading">¶</a></h2>
+<p>A number of topics we covered in lectures are relevant for this exercise.</p>
+<p><strong>Topic 1</strong>: Re-familiarise yourself with <strong>probability density functions</strong> (PDFs), <strong>cumulative distribution functions</strong> (CDFs) and the <strong>quantile (or percent point function)</strong>. The figure shows the same data displayed as a PDF (<span class="math notranslate nohighlight">\(P (X=x)\)</span> ) and CDF (<span class="math notranslate nohighlight">\(P (X=\bar{x})\)</span> ). After your studies of the topics, you should understand what is displayed and labelled here.</p>
+<figure class="align-center" style="width: 600px">
+<img alt="../../_images/ppf.jpg" src="../../_images/ppf.jpg" />
+</figure>
+<p><strong>Topic 2</strong>: The next topics to remember are <strong>basic set notation</strong>, <strong>classic statistical hypothesis testing</strong> and <strong>one and two tailed testing</strong>. See if you remember and understand the following example from our lecture:</p>
+<p><em>“The DLR is investigating differences in albedo as clouds gain in thickness. Stratus clouds have an albedo of ca. 0.5, the observed albedo increase as they thicken up is 0.05, as picked up by 100 measurements. The sample standard deviation (s) is 0.4. Does thickness truly affect albedo?”</em></p>
+<p>This scenario gives us:</p>
+<ul class="simple">
+<li><p>Null hypothesis: Thickness has no effect; the mean is still 0.5 even after thickness increase. (<span class="math notranslate nohighlight">\(H_0: \mu=0.5\)</span> )</p></li>
+<li><p>Alternative hypothesis: Thickness has an effect; the mean is no longer 0.5 after thickness increase.  (<span class="math notranslate nohighlight">\(H_A: \mu \ne 0.5\)</span> )</p></li>
+</ul>
+<p>If <span class="math notranslate nohighlight">\(H_0: \mu=0.5\)</span> is true, we can calculate the probability of getting a signal as extreme or even more extreme than the observed (0.05).</p>
+<figure class="align-center" style="width: 600px">
+<img alt="../../_images/example1.jpg" src="../../_images/example1.jpg" />
+</figure>
+<p>Finally:</p>
+<figure class="align-center" style="width: 600px">
+<img alt="../../_images/example2.jpg" src="../../_images/example2.jpg" />
+</figure>
+<p>The probability (p) is too high for us to reject the null hypothesis <span class="math notranslate nohighlight">\(H_0: \mu=0.5\)</span> . With those specific sets of measurements and knowledge, we therefore cannot confidently say that thickness has an effect on albedo.</p>
+</section>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Link to this heading">¶</a></h2>
+<section id="information">
+<h3>Information<a class="headerlink" href="#information" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Topic</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Skills</strong></p></td>
+<td><ul class="simple">
+<li><p>data processing</p></li>
+<li><p>statistical hypothesis testing</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<aside class="topic">
+<p class="topic-title">What to Submit</p>
+<p>Submit your script(s) and 1-2 sentence answers to the questions for the tasks of this exercise. You may include the answers as comments in your script(s). Make sure to also comment each of your calculations (using the terminology you were introduced to). The script should be named <em>e102_[your student number].[ext]</em>, where <em>[ext]</em> is the file extension. In case of Python, this would be <em>.py</em>, for modern Fortran it is <em>.f90</em>, etc.</p>
+</aside>
+</section>
+<section id="hypothesis-testing-temperatures-near-antofagasta">
+<h3>Hypothesis Testing: Temperatures near Antofagasta<a class="headerlink" href="#hypothesis-testing-temperatures-near-antofagasta" title="Link to this heading">¶</a></h3>
+<figure class="align-center" id="id1">
+<img alt="../../_images/PanDeAzucar_ccby_KirstinUebernickel1.jpg" src="../../_images/PanDeAzucar_ccby_KirstinUebernickel1.jpg" />
+<figcaption>
+<p><span class="caption-text">Weather station in Pan de Azucar National Park, ca. 200km south of Antofagasta. Records from different measurement systems flow into the interpolated observation-based datasets of re-analysis products. [photo: cc-by Kirstin Übernickel]</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>You are provided with an ERA-Interim re-analysis time series extracted for Antofagasta (Chile):</p>
+<p><a class="reference download internal" download="" href="../../_downloads/45860e2931c8583162ab266665d7fe49/Antofagasta.csv"><code class="xref download docutils literal notranslate"><span class="pre">Antofagasta.cvs</span></code></a></p>
+<p>Regional climate models were forced with boundary conditions reflecting a low-emission-scenario state of technological and demographic developments. They simulated a climate for the 2070-2100. The model produced local January temperatures that have a mean of 23.6°C, and June temperatures with a mean of 17.2°C. You want to know if we see an increase in January and June temperatures near Antofagasta under the low-emission scenario. Using the dataset you are provided with, calculate the predicted temperature changes and determine if the signals are real or still within reasonable range of the observed temperature variability. Formulate testable hypothesess and apply your knowledge of statistical hypothesis testing, “p-values” and significance levels to answer this question.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You need models (PDF) to describe your null hypotheses. Think about how you would construct such a model for the problem you want to solve.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Sebastian G. Mutz.
+      <span class="lastupdated">Last updated on Sep 15, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
