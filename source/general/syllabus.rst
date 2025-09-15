@@ -41,11 +41,9 @@ Ongoing informal assessment and verbal feedback will be available through discus
 Summative Assessment
 ....................
 
-**Assessment 1 (Group Projects, 80% of total grade):**
-The (data analysis/model development) group projects will involve original programming to tackle a problem in climate science using statistical and/or machine learning techniques. You are asked to write and submit a report that presents and discusses the outcomes of the project.
-
-**Assessment 2 (Group Project Presentations, 20% of total grade):**
-All group projects will be presented by the groups successively over the course of 3h. We will adopt a typical academic conference format with a programme, strict time limits and opportunities for questions. You are asked to deliver an oral presentation to communicate and evaluate the group project outcomes.
+* A report that presents and discusses the outcomes of a data analysis or model development group project (50%),
+* An oral presentation to communicate and evaluate the group project outcomes (25%),
+* Submissions of the student's solutions to a series of exercises (25%).
 
 
 

@@ -33,18 +33,18 @@ Table of Contents
 
    exercises/info
    exercises/E001/py/E001
-   exercises/E002/py/E002
-   exercises/E003/py/E003
-   exercises/E004/py/E004
-   exercises/E005/py/E005
+..    exercises/E002/py/E002
+..    exercises/E003/py/E003
+..    exercises/E004/py/E004
+..    exercises/E005/py/E005
 
 .. toctree::
    :maxdepth: 1
    :caption: Exercises (Climate):
 
-   exercises/E101/E101
-   exercises/E102/E102
-   exercises/E103/E103
+..    exercises/E101/E101
+..    exercises/E102/E102
+..    exercises/E103/E103
 ..    exercises/E104/E104
 ..    exercises/E105/E105
 ..
@@ -66,7 +66,7 @@ Table of Contents
    :maxdepth: 1
    :caption: Additional Resources:
    
-   resources/data
    resources/dictionary
    resources/reading
    resources/credits
+..    resources/data
