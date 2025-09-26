@@ -3,6 +3,9 @@ E002 - Arrays and Constructs
 
 In this exercise, you learn about some more basic concepts of programming, incl. arrays and ways to let your programme automate calculations and make decisions. **We will explore this with the Python programming language.**
 
+.. note:: For a similar tutorial for **Fortran**, see `here (arrays) <https://fortran-lang.org/learn/quickstart/arrays_strings/>`_ and `here (flow control) <https://fortran-lang.org/learn/quickstart/operators_control_flow/>`_.
+
+
 Information
 ----------- 
 

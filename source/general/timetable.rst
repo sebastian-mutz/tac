@@ -14,13 +14,13 @@ Class Times and Venue
 Classes are timetabled as workshops on:
 
 * **Lectures** (Weeks 1-5):
-    - *When*: Tuesdays (12:30 – 15:30)
+    - *When*: Tuesdays (13:00 – 16:00)
     - *Where*: Teaching Lab EQ204 (East Quad. in the Gilbert Scott Building)
 * Labs (Weeks 6-10):
     - *When*: Wednesdays (9:00 – 12:00)
     - *Where*: Teaching Lab EQ204 (East Quad. in the Gilbert Scott Building)
 * Presentations for assessment 2 (Week 10):
-    - *When*: Thursday (12:30 – 16:30)
+    - *When*: Thursday (13:00 – 17:00)
     - *Where*: room EQ412 (East Quad. in the Gilbert Scott Building)
 
 Lecture Timetable and Topics
@@ -97,7 +97,7 @@ Assessment Dates
 
 * All group projects will be presented by the groups successively over the course of 3h. We will adopt a typical academic conference format with a programme, strict time limits and opportunities for questions. You are asked to deliver an oral presentation to communicate and evaluate the group project outcomes.
 * Issued: 19.11.2025
-* Deadline: 04.12.2025, 12:30 – 16:30. (Presented)
+* Deadline: 04.12.2025, 13:00 – 17:00. (Presented)
 
 
 
