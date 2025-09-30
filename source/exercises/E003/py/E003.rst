@@ -3,6 +3,8 @@ E003 - Functions
 
 In this exercise, you will learn about writing your own functions and using them in an efficient way. **We will explore this with the Python programming language.**
 
+.. note:: For a similar tutorial for **Fortran**, see `here (organising code structure) <https://fortran-lang.org/learn/quickstart/organising_code/>`_.
+
 
 Information
 ----------- 
