@@ -2,8 +2,8 @@ import numpy
 import matplotlib.pyplot as plt
 #
 """
-Fixed Parameters
-================
+Constants
+=========
 
 SB_SIGMA - Stefan-Boltzman constant in W/(m**2 K**4)
 PI       - delicious old pi

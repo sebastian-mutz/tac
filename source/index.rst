@@ -40,13 +40,14 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Exercises (Climate):
+   :caption: Assignments:
 
-..    exercises/E101/E101
-..    exercises/E102/E102
+   exercises/E101/E101
+   exercises/E102/E102
+   exercises/E105/E105
 ..    exercises/E103/E103
 ..    exercises/E104/E104
-..    exercises/E105/E105
+
 ..
 .. .. toctree::
 ..    :maxdepth: 1
