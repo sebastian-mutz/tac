@@ -69,5 +69,6 @@ Table of Contents
    
    resources/dictionary
    resources/reading
+   resources/data
    resources/credits
-..    resources/data
+
