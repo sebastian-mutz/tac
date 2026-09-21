@@ -67,9 +67,9 @@ Note: You may need additional packages for your group project.
 I will introduce the languages in our first session. Please discuss your language preference at the beginning of the semester, so it can be taken into account during practicals and group project planning.
 
 
-Terminology
------------
-In this exercise series, you will be introduced to some vocabulary you may not yet know. A complete list the terminology used in this course (incl. definitions and examples) can be found in the :doc:`DICTIONARY<../resources/dictionary>`. 
+.. Terminology
+.. -----------
+.. In this exercise series, you will be introduced to some vocabulary you may not yet know. A complete list the terminology used in this course (incl. definitions and examples) can be found in the :doc:`DICTIONARY<../resources/dictionary>`.
 
 
 Experiment, Ask Questions, Have Fun!

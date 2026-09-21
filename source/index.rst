@@ -11,9 +11,9 @@ Course Website
 
 Getting Started!
 ----------------
-This website is supplementary material for the course "EARTH5019: Theoretical and Applied Climatology" listed on the University of Glasgow Moodle site. Students can get an overview of the course in the :doc:`general information section<general/info>` and a more detailed overview of the course contents in the :doc:`course specifics section<general/syllabus>`. A detailed timetable and assessment deadlines can be found in the :doc:`when and where section<general/timetable>`.
+This website is supplementary material for the course "EARTH5019: Theoretical and Applied Climatology" listed on the University of Glasgow Moodle site. Students can get start with the :doc:`welcome section<general/info>`, then overview of the course in the :doc:`general information section<general/syllabus>`. A detailed timetable and assessment deadlines can be found in the :doc:`when and where section<general/timetable>`.
 
-.. note:: Assessment criteria and other important information are copied here for your convenience, so you have all course content and information in the same place! I will do my best to keep everything up-to-date here. However, if any information deviates from that given on **Moodle** or the official **Course Handbook** (uploaded on Moodle), the information from the latter sources are to be regarded as correct.
+.. note:: This website is primarily for making the exercises and computer lab instructions more accessible. For critical information, such as assessments and exact course specifications, please have a look at our **Moodle** page instead.
 
 
 Table of Contents
@@ -32,9 +32,10 @@ Table of Contents
    :caption: Exercises (Coding):
 
    exercises/info
+   exercises/E001/f90/E001
    exercises/E001/py/E001
-   exercises/E002/py/E002
-   exercises/E003/py/E003
+..    exercises/E002/py/E002
+..    exercises/E003/py/E003
 ..    exercises/E004/py/E004
 ..    exercises/E005/py/E005
 
@@ -42,9 +43,9 @@ Table of Contents
    :maxdepth: 1
    :caption: Assignments:
 
-   exercises/E101/E101
-   exercises/E102/E102
-   exercises/E105/E105
+..    exercises/E101/E101
+..    exercises/E102/E102
+..    exercises/E105/E105
 ..    exercises/E103/E103
 ..    exercises/E104/E104
 
@@ -67,8 +68,7 @@ Table of Contents
    :maxdepth: 1
    :caption: Additional Resources:
    
-   resources/dictionary
    resources/reading
-   resources/data
    resources/credits
-
+..    resources/data
+..    resources/dictionary
