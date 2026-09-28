@@ -209,9 +209,6 @@ Some useful intrinsic mathematical functions include:
 * ``exp(x)`` -- exponential
 * ``log(x)`` -- natural logarithm
 
-Fortran also provides mathematical constants through standard facilities in
-modern language environments, but for this introductory exercise it is useful
-to practise declaring your own constant, as shown below.
 
 Variables and Constants
 -----------------------
@@ -349,4 +346,4 @@ Write and submit a programme that:
 * combines functions and/or expressions somewhere in the programme;
 * includes comments for every executable instruction in the programme.
 
-Save your programme as `e001.f90` and submit it.
+Save your programme as `e001.f90` and submit it via **Moodle**.

@@ -1,9 +1,7 @@
-E002 - Arrays and Constructs
-============================
+E002 (Python) - Arrays and Constructs
+=====================================
 
 In this exercise, you learn about some more basic concepts of programming, incl. arrays and ways to let your programme automate calculations and make decisions. **We will explore this with the Python programming language.**
-
-.. note:: For a similar tutorial for **Fortran**, see `here (arrays) <https://fortran-lang.org/learn/quickstart/arrays_strings/>`_ and `here (flow control) <https://fortran-lang.org/learn/quickstart/operators_control_flow/>`_.
 
 
 Information
@@ -296,4 +294,4 @@ Since one of the student was missing, n=9. Write code for at least **two differe
 
 Try to keep your code as flexible as possible. Ideally, it should still work next year, when a different student may be missing (corresponding to a different position in your list of grades) or when more students fail to take the exam. Also make sure you comment each line of code to let other programmers know what you are doing.
 
-When you are happy with your script, save it as *[your student number]_e001.[ext]* and submit it via **Moodle**.
+When you are happy with your script, save it as `e002.py` and submit it via **Moodle**.
