@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E001 (Fortran) - Getting Started &mdash; EARTH5019: Theoretical and Applied Climatology (UofG) 1.1-2025.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=20074c1a" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/style.css?v=67cdc1c8" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=55ea33ec"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="E001 (Python) - Getting Started" href="../py/E001.html" />
+    <link rel="prev" title="Intro" href="../../info.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            EARTH5019: Theoretical and Applied Climatology (UofG)
+              <img src="../../../_static/integrateLogo256x256_ccby_SebastianMutz.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Course Information:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/info.html">Welcome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/syllabus.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/timetable.html">When and Where</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Exercises (Coding):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../info.html">Intro</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">E001 (Fortran) - Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#information">Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workflow-setup">Workflow Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-and-compiling-a-simple-programme">Writing and Compiling a Simple Programme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-maths">Simple Maths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intrinsic-functions">Intrinsic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables-and-constants">Variables and Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-types">Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modules">Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#your-task">Your Task</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../py/E001.html">E001 (Python) - Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../E002/f90/E002.html">E002 (Fortran) - Arrays and Constructs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../E002/py/E002.html">E002 (Python) - Arrays and Constructs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../E003/f90/E003.html">E003 (Fortran) - Procedures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../E003/py/E003.html">E003 (Python) - Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../resources/reading.html">Reading Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../resources/credits.html">License and Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EARTH5019: Theoretical and Applied Climatology (UofG)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">E001 (Fortran) - Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/exercises/E001/f90/E001.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="e001-fortran-getting-started">
+<h1>E001 (Fortran) - Getting Started<a class="headerlink" href="#e001-fortran-getting-started" title="Link to this heading">¶</a></h1>
+<p>In this exercise, you learn about some basic concepts of programming, commonly used tools, and how to write and execute a script. You may come across some important vocabulary that you are not yet familiar with. <strong>We will explore this with modern Fortran (programming language).</strong></p>
+<section id="information">
+<h2>Information<a class="headerlink" href="#information" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Topic</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Concepts</strong></p></td>
+<td><ul class="simple">
+<li><p>programme</p></li>
+<li><p>compilers</p></li>
+<li><p>IDE, code highlighting, terminal emulator</p></li>
+<li><p>data types</p></li>
+<li><p>modules (Fortran)</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Skills</strong></p></td>
+<td><ul class="simple">
+<li><p>code with only a text editor and terminal emulator</p></li>
+<li><p>create, compile and execute a programme</p></li>
+<li><p>declaring parameters and variables</p></li>
+<li><p>using built-in functions</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="workflow-setup">
+<h2>Workflow Setup<a class="headerlink" href="#workflow-setup" title="Link to this heading">¶</a></h2>
+<p>Fortran is a compiled language. Hence, our process will be: <strong>write code &gt; compile code &gt; run executable file</strong>. This means we will need the following tools to set up our workflow:</p>
+<ul class="simple">
+<li><p>We will write our code in a text editor with code-highlighting feature. For demonstration purposes, we will use <a class="reference external" href="https://apps.kde.org/en-gb/kate/">Kate</a>. However, there are many great editors (e.g., <a class="reference external" href="https://www.gnu.org/software/emacs/">Emacs</a>).</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<img alt="../../../_images/texteditor.jpg" src="../../../_images/texteditor.jpg" />
+<figcaption>
+<p><span class="caption-text">Text editors like <em>Kate</em> support code highlighting, which will make your code much easier to read!</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul>
+<li><p>We will execute our compiled programme from command line in a terminal emulator (also referred to as console in this document). There are many great options. If you are using any Linux or Unix operating system (incl. MacOS), you will most likely have a terminal emulator already installed. If you’re using Windows, installing <a class="reference external" href="https://www.cygwin.com/">Cygwin</a> is recommended. For this tutorial, demonstrations will be done with KDE’s <a class="reference external" href="https://konsole.kde.org/">Konsole</a> and <em>bash</em> shell (command-line interpreter). For the exercises here, you do not need to know <em>bash</em> commands well. You only need to know 3 commands:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> lets you view the content of your working directory (the folder  you are currently in). <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span></code> will list the contents line-by-line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> (short for “print working directory”) lets you find out which directory you are in.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> will change the directory you are working in. It is the equivalent of opening a folder in your file browser. For example: If you are currently in a folder <code class="docutils literal notranslate"><span class="pre">home</span></code> that contains a subfolder named <code class="docutils literal notranslate"><span class="pre">doge</span></code>, you can navigate to the subfolder by typing <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">doge</span></code>. If you want to navigate one folder level up, you simply type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+<figure class="align-center" id="id2">
+<img alt="../../../_images/terminal.jpg" src="../../../_images/terminal.jpg" />
+<figcaption>
+<p><span class="caption-text"><em>Konsole</em> is one of many well-established terminal emulators. The image demonstrates some useful bash commands. The commands are written in lines starting with $ and executed by hitting enter. The results of the commands are displayed in the other lines below them.</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>We will compile our code with the <a class="reference external" href="https://gcc.gnu.org/fortran/">gfortran</a> compiler. Additional installation instructions can be found <a class="reference external" href="https://fortran-lang.org/learn/os_setup/install_gfortran/">here</a>. The simplest way to compile your Fortran code with gfortran is by typing the following into your terminal emulator:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gfortran<span class="w"> </span><span class="o">[</span>path1<span class="o">]</span>/<span class="o">[</span>code<span class="o">]</span>.f90<span class="w"> </span>-o<span class="w"> </span><span class="o">[</span>path2<span class="o">]</span>/<span class="o">[</span>program<span class="o">]</span>.exe
+./<span class="o">[</span>program<span class="o">]</span>.exe
+</pre></div>
+</div>
+<p>With the command in the first line, you are telling the compiler to compile your script with file name <em>[code]</em> located in the folder <em>[path1]</em> and create an executable file with file name <em>[program]</em> in the folder <em>[path2]</em>. The second line will run your progam. If you are working on a Linux/Unix system, you do not need the <em>.exe</em> file extension, but it may help you identify your executables.</p>
+</section>
+<section id="writing-and-compiling-a-simple-programme">
+<h2>Writing and Compiling a Simple Programme<a class="headerlink" href="#writing-and-compiling-a-simple-programme" title="Link to this heading">¶</a></h2>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">program </span><span class="n">printing</span>
+<span class="k">implicit none</span>
+
+<span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;wow, many print&quot;</span>
+
+<span class="k">end program</span>
+</pre></div>
+</div>
+<p>Let’s go through the programme in detail:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">program</span> <span class="pre">printing</span></code> starts the programme and gives it the name <code class="docutils literal notranslate"><span class="pre">printing</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">implicit</span> <span class="pre">none</span></code> tells Fortran that every variable must be explicitly
+declared. This is an important modern Fortran programming practice.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">*</span></code> writes information to the terminal using Fortran’s default
+output formatting.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">end</span> <span class="pre">program</span> <span class="pre">printing</span></code> marks the end of the programme.</p></li>
+</ul>
+<p>Save this as <code class="docutils literal notranslate"><span class="pre">printing.f90</span></code> and compile it with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gfortran<span class="w"> </span>printing.f90<span class="w"> </span>-o<span class="w"> </span>printing
+</pre></div>
+</div>
+<p>Here, we are asking for the Fortran code in file <code class="docutils literal notranslate"><span class="pre">printing.f90</span></code> to be converted into an execurable file named <code class="docutils literal notranslate"><span class="pre">printing</span></code>. We can then run it with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./printing
+</pre></div>
+</div>
+<p>You can also simply combine the commands in one line using ampersands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gfortran<span class="w"> </span>printing.f90<span class="w"> </span>-o<span class="w"> </span>printing<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./printing
+</pre></div>
+</div>
+<p>The terminal should display:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wow</span><span class="p">,</span> <span class="n">many</span> <span class="nb">print</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Fortran Package Manager (fpm) simplifies workflows and compilations, especially for larger projects. This <a class="reference external" href="https://fpm.fortran-lang.org/tutorial/hello-fpm.html">short tutorial</a> explains how you set up a Fortran project with fpm. It is worth investing a few minutes to familiarise yourself with fpm if you want to use Fortran for the later projects in this course.</p>
+</div>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Link to this heading">¶</a></h2>
+<p>Comments are text in the source code that are ignored by the compiler. In
+modern Fortran, a comment begins with <code class="docutils literal notranslate"><span class="pre">!</span></code>. For example:</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="c">! This is a comment.</span>
+<span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Hello!&quot;</span><span class="w">  </span><span class="c">! This is also a comment.</span>
+</pre></div>
+</div>
+<p>Comments are useful for explaining <em>why</em> code exists and for documenting
+assumptions. For this exercise, every executable instruction in your submitted
+programme should have an explanatory comment.</p>
+</section>
+<section id="simple-maths">
+<h2>Simple Maths<a class="headerlink" href="#simple-maths" title="Link to this heading">¶</a></h2>
+<p>Fortran provides arithmetic operators for common mathematical operations.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td><p>addition</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">20</span> <span class="pre">+</span> <span class="pre">22</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p>subtraction</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2077</span> <span class="pre">-</span> <span class="pre">93</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p>multiplication</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">578</span> <span class="pre">*</span> <span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/</span></code></p></td>
+<td><p>division</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1332</span> <span class="pre">/</span> <span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">**</span></code></p></td>
+<td><p>exponentiation</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">16</span> <span class="pre">**</span> <span class="pre">2</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>Try these expressions in a programme</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">program </span><span class="n">maths</span>
+<span class="w">    </span><span class="k">implicit none</span>
+
+<span class="k">    print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">22</span>
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mi">2077</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">93</span>
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mi">578</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mi">1332</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mi">2</span>
+<span class="k">end program </span><span class="n">maths</span>
+</pre></div>
+</div>
+<p>The output should contain values corresponding to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">42</span>
+<span class="mi">1984</span>
+<span class="mi">2312</span>
+<span class="mi">666</span>
+<span class="mi">256</span>
+</pre></div>
+</div>
+<p>Notice that the type of an expression matters. For example, integer division
+is different from floating-point division</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span>
+<span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mf">5.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2.0</span>
+</pre></div>
+</div>
+<p>The first expression uses integers, whereas the second uses real numbers.</p>
+</section>
+<section id="intrinsic-functions">
+<h2>Intrinsic Functions<a class="headerlink" href="#intrinsic-functions" title="Link to this heading">¶</a></h2>
+<p>Fortran provides many intrinsic functions for common mathematical and
+programming operations. These functions are built into the language and do not
+require an external library.</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> calculates a square root and <code class="docutils literal notranslate"><span class="pre">sin</span></code> calculates a sine</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">program </span><span class="n">functions</span>
+<span class="w">    </span><span class="k">implicit none</span>
+
+<span class="k">    print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="nb">sqrt</span><span class="p">(</span><span class="mi">6</span><span class="mf">4.0</span><span class="p">)</span>
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="nb">sin</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="k">end program </span><span class="n">functions</span>
+</pre></div>
+</div>
+<p>You can combine functions and expressions. For example</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="nb">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="mf">6.0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">4</span><span class="mf">8.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The expression inside <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> is evaluated first. Its result is then passed
+to <code class="docutils literal notranslate"><span class="pre">sqrt</span></code>.</p>
+<p>Some useful intrinsic mathematical functions include:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">sqrt(x)</span></code> – square root</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">abs(x)</span></code> – absolute value</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sin(x)</span></code> – sine</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cos(x)</span></code> – cosine</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exp(x)</span></code> – exponential</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">log(x)</span></code> – natural logarithm</p></li>
+</ul>
+</section>
+<section id="variables-and-constants">
+<h2>Variables and Constants<a class="headerlink" href="#variables-and-constants" title="Link to this heading">¶</a></h2>
+<p>A variable stores a value that can change while a programme is running. A
+constant (a named parameter in Fortran) stores a value that should not change.</p>
+<p>For example</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">program </span><span class="n">variables</span>
+<span class="w">    </span><span class="k">implicit none</span>
+
+<span class="k">    </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">x</span>
+<span class="w">    </span><span class="kt">real</span><span class="p">,</span><span class="w"> </span><span class="k">parameter</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="nb">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.5</span>
+<span class="w">    </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">y</span>
+
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">sqrt</span><span class="p">(</span><span class="mi">6</span><span class="mf">4.0</span><span class="p">)</span>
+<span class="w">    </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">scale</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2.0</span>
+
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;x =&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span>
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;y =&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">y</span>
+<span class="k">end program </span><span class="n">variables</span>
+</pre></div>
+</div>
+<p>The declaration <code class="docutils literal notranslate"><span class="pre">real</span> <span class="pre">::</span> <span class="pre">x</span></code> creates a variable named <code class="docutils literal notranslate"><span class="pre">x</span></code> that can store a real (floating-point) value.</p>
+<p>The declaration <code class="docutils literal notranslate"><span class="pre">real,</span> <span class="pre">parameter</span> <span class="pre">::</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">0.5</span></code> creates a named constant. The <code class="docutils literal notranslate"><span class="pre">parameter</span></code> attribute means that its value cannot be changed later.</p>
+<p>Unlike Python, Fortran requires variables to be declared before they are used. This is great, because it makes you think more carefully about what you want to do, and helps prevent problems down the line.</p>
+</section>
+<section id="data-types">
+<h2>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">¶</a></h2>
+<p>A data type describes what kind of value a variable can store. Common intrinsic Fortran types include:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">integer</span></code></p></td>
+<td><p>whole numbers</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">42</span></code>, <code class="docutils literal notranslate"><span class="pre">451</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">real</span></code></p></td>
+<td><p>floating-point numbers</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">20.77</span></code>, <code class="docutils literal notranslate"><span class="pre">2.312</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">logical</span></code></p></td>
+<td><p>logical values</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.true.</span></code>, <code class="docutils literal notranslate"><span class="pre">.false.</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">character</span></code></p></td>
+<td><p>text</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>For example</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">year</span>
+<span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">temperature</span>
+<span class="kt">logical</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">is_ready</span>
+<span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span>
+
+<span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2026</span>
+<span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="mf">0.77</span>
+<span class="n">is_ready</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">.</span><span class="n">true</span><span class="p">.</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Fortran&quot;</span>
+</pre></div>
+</div>
+<p>For numerical scientific computing, it is good practice to be deliberate
+about numerical precision. For this introductory exercise, ordinary
+<code class="docutils literal notranslate"><span class="pre">real</span></code> values are sufficient.</p>
+</section>
+<section id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h2>
+<p>Fortran uses modules to group related declarations, procedures, and constants. Modules are an important mechanism for structuring larger programmes. For a larger programme, you would normally move reusable functionality into
+modules and use procedures (functions and subroutines) rather than placing all calculations in the main programme.</p>
+<p>The following example defines a module containing a constant and a function</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">module </span><span class="n">geometry</span>
+<span class="w">    </span><span class="k">implicit none</span>
+
+<span class="k">    </span><span class="kt">real</span><span class="p">,</span><span class="w"> </span><span class="k">parameter</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">pi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.141592653589793</span>
+
+<span class="k">contains</span>
+
+<span class="k">    </span><span class="kt">real </span><span class="k">function </span><span class="n">circle_area</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>
+<span class="w">        </span><span class="kt">real</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">radius</span>
+
+<span class="w">        </span><span class="n">circle_area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pi</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">    </span><span class="k">end function </span><span class="n">circle_area</span>
+
+<span class="k">end module </span><span class="n">geometry</span>
+</pre></div>
+</div>
+<p>A programme can then use the module with <code class="docutils literal notranslate"><span class="pre">use</span></code></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">program </span><span class="n">module_example</span>
+<span class="w">    </span><span class="k">use </span><span class="n">geometry</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">circle_area</span>
+<span class="w">    </span><span class="k">implicit none</span>
+
+<span class="k">    </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">area</span>
+
+<span class="w">    </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">circle_area</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="w">    </span><span class="k">print</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;area =&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">area</span>
+<span class="k">end program </span><span class="n">module_example</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">only</span></code> clause makes it explicit which module entities the programme uses.
+This is a useful habit in larger Fortran projects because it makes
+dependencies easier to see.</p>
+<p>The module must be compiled before, or together with, the programme that uses
+it. A simple approach is to compile both source files in a single command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gfortran<span class="w"> </span>geometry.f90<span class="w"> </span>module_example.f90<span class="w"> </span>-o<span class="w"> </span>module_example
+</pre></div>
+</div>
+</section>
+<section id="your-task">
+<h2>Your Task<a class="headerlink" href="#your-task" title="Link to this heading">¶</a></h2>
+<p>Now you have covered enough of the basics of practical programming to start
+writing your own modern Fortran programme.</p>
+<p>Write and submit a programme that:</p>
+<ul class="simple">
+<li><p>calculates and displays the circumference and area of a circle with a
+radius of 2;</p></li>
+<li><p>uses mathematical operators;</p></li>
+<li><p>uses at least one intrinsic mathematical function;</p></li>
+<li><p>declares and uses variables;</p></li>
+<li><p>declares and uses at least one named constant with <code class="docutils literal notranslate"><span class="pre">parameter</span></code>;</p></li>
+<li><p>combines functions and/or expressions somewhere in the programme;</p></li>
+<li><p>includes comments for every executable instruction in the programme.</p></li>
+</ul>
+<p>Save your programme as <cite>e001.f90</cite> and submit it via <strong>Moodle</strong>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../info.html" class="btn btn-neutral float-left" title="Intro" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../py/E001.html" class="btn btn-neutral float-right" title="E001 (Python) - Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Sebastian G. Mutz.
+      <span class="lastupdated">Last updated on Oct 03, 2026.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
