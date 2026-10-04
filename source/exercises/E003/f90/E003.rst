@@ -177,38 +177,6 @@ Run the programme:
    ./cashier_example
 
 
-A Function That Prints
-~~~~~~~~~~~~~~~~~~~~~~
-
-A procedure that calculates and prints a total can instead be written as a
-subroutine. If it is another procedure in the ``cashier`` module (placed inside
-the ``contains`` section), it can use ``lookup_price`` directly.
-
-.. code-block:: fortran
-
-   subroutine calculate_print_total(product_list)
-       character(len=*), intent(in) :: product_list(:)
-       real :: total
-       integer :: i
-
-       total = 0.0
-       do i = 1, size(product_list)
-           total = total + lookup_price(product_list(i))
-       end do
-
-       print *, total
-   end subroutine calculate_print_total
-
-Call it with:
-
-.. code-block:: fortran
-
-   call calculate_print_total(products)
-
-A function returns a value and can be used in an expression. A subroutine is
-called with ``call`` and can return values through arguments or perform an
-action.
-
 Unit Converter Module
 ---------------------
 
