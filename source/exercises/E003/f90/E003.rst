@@ -128,8 +128,7 @@ Create ``cashier.f90``:
            integer :: i
            calculate_total = 0.0
            do i = 1, size(product_list)
-               calculate_total = calculate_total + &
-                   lookup_price(product_list(i))
+               calculate_total = calculate_total + lookup_price(product_list(i))
            end do
        end function calculate_total
    end module cashier
@@ -234,6 +233,12 @@ You could extend this module with additional conversion functions, including
 the millimetres-per-day and millimetres-per-annum conversions. Thematically,
 it would fit within the same module.
 
+.. note::
+
+   It's best practice to have your file names match the module names, and to
+   have one file per module. The module ``unit_converter`` should therefore
+   be saved in a file named ``unit_converter.f90``.
+
 Task
 ----
 
@@ -258,9 +263,9 @@ Files to submit
 Your submission should consist of two Fortran source files.
 
 1. The module containing your functions:
-``e003_functions_[student number].f90``
+``e003_functions.f90``
 
 2. The main programme that uses the functions:
-``e003_main_[student number].f90``
+``e003_main.f90``
 
 Submit the two files as one zip archive (``e003.zip`` or ``e003.tar.gz``) on **Moodle**.
